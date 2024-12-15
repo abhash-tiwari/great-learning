@@ -49,7 +49,7 @@ const Login = () => {
             />
           </div>
           <div className={styles.forgotPassword}>
-            <a href="/forgot-password" className={styles.forgotPasswordLink}>
+            <a href="/" className={styles.forgotPasswordLink}>
               Forgot Password?
             </a>
           </div>

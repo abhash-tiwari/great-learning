@@ -1,4 +1,3 @@
-/* Base styles (Mobile First) */
 .dashboard {
     display: flex;
     flex-direction: column;
@@ -112,7 +111,7 @@
     color: #155724;
   }
   
-  /* Tablet Styles */
+
   @media screen and (min-width: 768px) {
     .dashboardContent {
       flex-direction: row;
@@ -129,7 +128,7 @@
     }
   }
   
-  /* Desktop Styles */
+
   @media screen and (min-width: 1024px) {
     .dashboard {
       padding: 30px;

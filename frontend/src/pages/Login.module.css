@@ -1,4 +1,3 @@
-/* Base styles (Mobile First) */
 .authContainer {
     display: flex;
     align-items: center;
@@ -108,7 +107,7 @@
     text-decoration: underline;
   }
   
-  /* Tablet Styles */
+
   @media screen and (min-width: 768px) {
     .formWrapper {
       padding: 30px;
@@ -122,8 +121,7 @@
       font-size: 16px;
     }
   }
-  
-  /* Desktop Styles */
+
   @media screen and (min-width: 1024px) {
     .authContainer {
       background-color: #f0f2f5;

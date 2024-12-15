@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import TaskCard from "../components/TaskCard";
 import axios from "../services/api";
 import styles from "./ProjectDetails.module.css";
@@ -32,7 +31,6 @@ const ProjectDetails = () => {
 
   return (
     <div className={styles.projectDetailsPage}>
-      <Navbar />
       <div className={styles.projectDetailsContainer}>
         <header className={styles.projectHeader}>
           <h2 className={styles.projectTitle}>{project.title}</h2>

@@ -33,7 +33,7 @@
     font-size: 0.75rem;
   }
   
-  /* Responsive adjustments */
+
   @media (max-width: 768px) {
     .projectCard {
       margin: 8px;

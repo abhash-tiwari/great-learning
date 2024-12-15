@@ -5,8 +5,15 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   const navigate = useNavigate();
 
+  const isLoggedIn = !!localStorage.getItem("token");
+
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("userName");
+    navigate("/login");
+  };
+
+  const handleLoginRegister = () => {
     navigate("/login");
   };
 
@@ -15,7 +22,14 @@ const Navbar = () => {
       <h1>Task Manager</h1>
       <ul>
         <li><Link to="/dashboard">Dashboard</Link></li>
-        <li><button onClick={handleLogout}>Logout</button></li>
+        {isLoggedIn ? (
+          <>
+            <li>Welcome</li>
+            <li><button onClick={handleLogout}>Logout</button></li>
+          </>
+        ) : (
+          <li><button onClick={handleLoginRegister}>Login/Register</button></li>
+        )}
       </ul>
     </nav>
   );
