@@ -1,0 +1,149 @@
+/* Base styles (Mobile First) */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .dashboardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sectionTitle {
+    color: #4a4a4a;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+  }
+  
+  .projectSection,
+  .taskSection {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .emptyState {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .projectList,
+  .taskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .projectItem,
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .projectItem:hover,
+  .taskItem:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .projectItem:last-child,
+  .taskItem:last-child {
+    border-bottom: none;
+  }
+  
+  .projectTitle,
+  .taskTitle {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .projectDetails {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .taskStatus {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+  
+  .taskStatus.pending {
+    background-color: #FFF3CD;
+    color: #856404;
+  }
+  
+  .taskStatus.in-progress {
+    background-color: #D1ECF1;
+    color: #0C5460;
+  }
+  
+  .taskStatus.completed {
+    background-color: #D4EDDA;
+    color: #155724;
+  }
+  
+  /* Tablet Styles */
+  @media screen and (min-width: 768px) {
+    .dashboardContent {
+      flex-direction: row;
+      gap: 30px;
+    }
+  
+    .projectSection,
+    .taskSection {
+      flex: 1;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media screen and (min-width: 1024px) {
+    .dashboard {
+      padding: 30px;
+    }
+  
+    .header {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 26px;
+    }
+  
+    .sectionTitle {
+      font-size: 20px;
+    }
+  }
